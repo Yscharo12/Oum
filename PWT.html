@@ -1,0 +1,53 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><HTML>
+<BODY BGCOLOR="ORANGE">
+<H1><CENTER><FONT SIZE="10"><FONT COLOR="GREEN"><U>WELCOME</U></FONT><FONT COLOR="RED"><U> TO MY</U></FONT><FONT
+COLOR="YELLOW"><U> HIDDEN FILE</U></FONT></SIZE></CENTER></H1>
+<FONT SIZE="5"><FONT COLOR="white">*If you are here this means that <FONT color="gold">
+Yomsi sokane</FONT> has given you a password to access a
+secret document.<br>
+*Enter the correct password in the space below to access the documet.<br>
+<FONT COLOR="RED">*PLEASE KEEP IT UNIQUE!!!</FONT>
+<br>
+<br>
+<meta name='viewport' content='width=device-wi dth, initial-scale=1'/>
+<a href="file:///C:/Users/JUDITH/Pictures/IMG.HTML"
+id="link"><BUTTON>OPEN FILE<BUTTON></a>
+<input type="password" id="password" placeholder="Entrez le mot de passe">
+<div id="message"></div>
+</HTML>
+<style>#link {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+#password {
+  width: 200px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#message {
+  color: #f00;
+}
+
+
+</style><script>const link = document.getElementById('link');
+const passwordInput = document.getElementById('password');
+const messageDiv = document.getElementById('message');
+
+const correctPassword = 'An8LOotC3Dxp'; // Remplacez par votre mot de passe
+
+link.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const password = passwordInput.value;
+
+  if (password === correctPassword) {
+    // Ouvrir le fichier
+    window.open('file:///C:/Users/JUDITH/Pictures/IMG.HTML', '_blank'); // Remplacez par le chemin de votre fichier
+  } else {
+    messageDiv.innerHTML = 'Mot de passe incorrect';
+  }
+});
+</script>
